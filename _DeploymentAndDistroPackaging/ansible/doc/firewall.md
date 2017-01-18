@@ -33,13 +33,13 @@ Firewall Settings
 | 123           | UDP           | NTP |
 | 53            | TCP/UDP       | DNS |
 
-* Allow INPUT/OUTPUT port 47(GRE).
+* Allow INPUT/OUTPUT protocol 47 (GRE).
 ```
 iptables -I INPUT   1 -p 47 -j ACCEPT
 iptables -I OUTPUT  1 -p 47 -j ACCEPT
 ```
 
-* For Ceph Cluster firewall configuration, check it's official documentation [Here](http://docs.ceph.com/docs/giant/rados/configuration/network-config-ref/).
+* For Ceph Cluster firewall configuration, check its official documentation [Here](http://docs.ceph.com/docs/giant/rados/configuration/network-config-ref/).
 
 Firewalld Service Example
 -------------------------
